@@ -1,0 +1,23 @@
+key down:
+- spel begint
+- level = 0
+- nextSequence voor eerste keer gestart
+
+nextSequence
+- userClickedPattern = [];
+- genereert random kleur
+- voegt random kleur toe aan einde gamePattern
+- toont array aan user (licht en geluid)
+
+
+
+
+klik
+1. check of userClickedPattern.length = gamePattern.length
+  Zo ja: vergelijk userClickedPattern met gamePattern
+    Indien ongelijk: game over.
+    Indien gelijk: nextSequence
+
+  Zo nee (userClickedPattern < gamePattern): vergelijk userClickedPattern[click-1] met gamePattern[click-1]
+    Indien ongelijk: game over.
+    Indien gelijk: geen actie en wacht op volgende click
